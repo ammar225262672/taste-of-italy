@@ -1,0 +1,124 @@
+@import url('./reset.css');
+@import url('ver.css');
+@import url('DeskTop-book.css');
+.grid{
+    display: grid;
+}
+
+/* tablet  screen setings */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px; /* Reduce padding for header */
+    }
+    #burggerIcon {
+        display: block;
+    }
+    
+    #hamburger {
+        display: none;
+        align-items: right !important;
+    }
+
+    .navHeader {
+        height: auto; /* Adjust height of navigation bar */
+    }
+
+    .navHeader ul.grid {
+        flex-direction: column; /* Change navigation links to column layout */
+        align-items: center; /* Center align navigation links */
+        padding-top: 10px; 
+    }
+
+    .navHeader ul.grid li {
+        margin-bottom: 10px; 
+    }
+
+    .navHeader ul.grid li a {
+        width: auto; 
+    }
+
+    #logo img {
+        width: 70px; 
+        margin-top: 0; 
+    }
+
+    h1 {
+        font-size: 24px; 
+        width: auto; 
+        margin-top: 20px; 
+        margin-left:10vw !important;
+        margin-right: 10vw !important;
+    }
+
+    form {
+        width: auto; /* Adjust width of form */
+        margin-left:10vw !important;
+        margin-right: 10vw !important; 
+        
+    }
+
+    form input {
+        width: 100%; 
+    }
+}
+
+
+
+/* mobile screen setings */
+@media only screen and (max-width: 325px) {
+    header {
+        padding: 10px; /* Reduce padding for header */
+    }
+
+    #burggerIcon {
+        display: block;
+    }
+    
+    #hamburger {
+        display: none;
+        align-items: right !important;
+    }
+
+
+    .navHeader {
+        height: auto; /* Adjust height of navigation bar */
+    }
+
+    .navHeader ul.grid {
+        flex-direction: column; /* Change navigation links to column layout */
+        align-items: center; /* Center align navigation links */
+        padding-top: 10px; 
+    }
+
+    .navHeader ul.grid li {
+        margin-bottom: 10px; 
+    }
+
+    .navHeader ul.grid li a {
+        width: auto; 
+    }
+
+    #logo img {
+        width: 70px; 
+        margin-top: 0; 
+    }
+
+    h1 {
+        font-size: 24px; 
+        width: auto; 
+        margin-top: 15px; 
+        margin-left:3vw !important;
+        margin-right: 3vw !important;
+    }
+
+    form {
+        width: auto; /* Adjust width of form */
+        margin-left:3vw !important;
+        margin-right: 3vw !important; 
+        
+    }
+
+    form input {
+        width: 100%; 
+    }
+}

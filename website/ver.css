@@ -1,0 +1,14 @@
+:root{
+
+    --clr-Basic :#fff;
+    --clr-green:#00ca1b;
+    --clr-hover-list:#b4000F;
+    --clr-bronze:#693103;
+    --clr-black:#141414; 
+    --clr-beige:#e4b95b;
+
+/*font size*/
+--main-header-f-size: 2em;
+--header-f-size:1.4em; 
+--p-f-size: calc(var(--header-f-size)*0.7) ;
+}

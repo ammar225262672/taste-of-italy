@@ -1,0 +1,208 @@
+body {
+    background-color: var(--clr-black);
+    font-size: var(--p-f-size);
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+}
+.navHeader {
+    width: 100%;
+    height: 30vh;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center !important;
+    overflow: hidden;
+    border-bottom: 3px solid var(--clr-Basic);
+}
+#logo img{
+    width: 90px;
+    margin-top: -25px;
+    
+}
+#hamburger {
+    display: flex;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    flex-grow: 0.99;
+    align-items: center;
+}
+
+
+#burggerIcon{
+    display: none;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 0.99;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    width: 150px;
+    color: var(--clr-beige);
+    text-align: center;
+    font-size: 1.2em;
+}
+ul li ul.drop-down li{
+    display:static;
+    padding-top: 10px;
+}
+ul li ul.drop-down {
+    width: 100%;
+    top:100%;
+    position:flex;
+    z-index: 999;
+    display: none;
+    background-image: url('../assets/images/italy flag_-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:fit-content;
+    border: 2px solid var(--clr-bronze); 
+    padding-bottom: 10px;
+
+    border-radius: 20px; 
+    text-align: center;
+}
+
+ul li a:hover {
+    font-weight: bolder;
+    color: var(--clr-Basic);
+    position:sticky;
+}
+ul li:hover ul.drop-down {
+    display: block;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--clr-Basic);
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+}
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+    
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  1fr;
+    
+}
+.grid #logo{
+    text-align: left;
+ }
+ header {
+    padding: 10px; /* Reduce padding for header */
+}
+
+.navHeader {
+    height: auto; /* Adjust height of navigation bar */
+}
+
+.navHeader ul.grid {
+    flex-direction: column; /* Change navigation links to column layout */
+    align-items: center; /* Center align navigation links */
+    padding-top: 10px; /* Add padding to top of navigation links */
+}
+
+.navHeader ul.grid li {
+    margin-bottom: 10px; /* Add margin between navigation links */
+}
+
+.navHeader ul.grid li a {
+    width: auto; /* Remove fixed width for navigation links */
+}
+
+#logo img {
+    width: 70px; /* Decrease logo size */
+    margin-top: 0; /* Remove negative margin */
+}
+ 
+ h1{
+     font-size: var(--header-f-size) !important;
+     width: 60vw;
+     margin-top: 35vh !important;
+     border: 5px solid rgba(255, 255, 255, 0.10) !important;
+     border-bottom: none !important;
+     color: var(--clr-beige);
+     text-align:left;
+     margin-left: 20vw !important;
+     padding-bottom: 50px !important;
+ }
+
+form{
+    display: flex;
+    width:60vw;
+    height: 400px;
+    background: #693103;
+    background: -webkit-radial-gradient(circle, #693103 0%, #141414 100%);
+    background: radial-gradient(circle, #f1b04e 0%, #141414 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0vh !important;
+    margin-left: 20vw !important;
+    padding: 20px;
+    border: 15px solid rgba(255, 255, 255, 0.10) !important;
+}
+form input{
+    cursor: pointer;
+    display: flex;
+    width: 80%;
+    border: none;
+    padding-top: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: var(--clr-black);
+    color: var(--clr-Basic);
+    border-radius: 5px;
+}
+::placeholder{
+    color: var(--clr-beige) !important;
+    font-size: 1em;
+    font-weight:bold !important;
+}
+form input:focus{
+    outline: none;
+}
+#time{
+    justify-content: center;
+    color: var(--clr-beige);
+}
+.btn{
+    justify-content: center;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--clr-beige);
+    margin-bottom: 0px !important;
+}
+.btn:hover{
+    background-color: var(--clr-Basic);
+    color: var(--clr-beige);
+    font-weight: 800;
+}
+
+
+

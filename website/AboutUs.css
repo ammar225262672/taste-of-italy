@@ -1,0 +1,106 @@
+@import url('./reset.css');
+@import url('./ver.css');
+@import url('./DeskTop-AboutUs.css');
+.grid {
+    display:  grid;
+}
+/* taplet setings */
+@media only screen and (max-width: 600px) {
+    #burggerIcon {
+        display: block;
+        filter: invert(100%);
+    }
+
+    #burggerIcon:hover +.grid{
+        display: flex;
+    }
+    
+    #hamburger {
+        position: relative;
+    }
+
+    .navHeader {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid {
+        display: none;
+    }
+
+    .grid-col {
+        grid-template-columns: 1fr;
+    }
+
+    #Founders,
+    #Our-Specialties,
+    #Experience {
+        width: 75% !important;
+        margin: 0 auto;
+        text-align: center; 
+    }
+    #Founders img{
+        width: 33%;
+    }
+
+    #image1 img,
+    #image2 img,
+    #image3 img {
+        display: block;
+        width: 75% !important;
+        margin: 0 auto; 
+        max-width: 100%; 
+        height: auto;
+    }
+}
+/* mobile setings */
+@media only screen and (max-width: 325px) {
+    #burggerIcon {
+        display: block;
+        filter: invert(100%);
+    }
+
+    #burggerIcon:hover +.grid{
+        display: flex;
+    }
+    
+    #hamburger {
+        position: relative;
+    }
+    .navHeader {
+        padding: 20px 0;
+    }
+
+    .grid {
+        display: none;
+    }
+
+    .grid-col {
+        grid-template-columns: 1fr;
+    }
+
+    #Founders,
+    #Our-Specialties,
+    #Experience {
+        width: 75% !important;
+        margin: 0 auto;
+        text-align: center; 
+    }
+    #Founders img{
+        width: 33.3%;
+    }
+
+    #image1 img,
+    #image2 img,
+    #image3 img {
+        display: block;
+        width: 100% !important;
+        margin: 0 auto; 
+        height: auto;
+    }
+}
+
+
+
+

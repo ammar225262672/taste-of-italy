@@ -1,0 +1,318 @@
+
+
+body {
+    display: flex;
+    background-color: var(--clr-black);
+    background-size: cover;
+    color: var(--clr-Basic);
+}
+p{
+    margin-top: 20px;
+}
+h1{
+    margin-top: 20px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex !important;
+    
+    padding: 80px 0px !important;
+}
+.navHeader {
+    width: 100%;
+    height: 30vh;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center !important;
+    overflow: hidden;
+    border-bottom: 3px solid var(--clr-Basic);
+}
+#logo img{
+    width: 10vw !important;
+    margin-top: -25px;
+    
+}
+#hamburger {
+    display: flex;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    flex-grow: 0.99;
+    align-items: center;
+}
+
+
+#burggerIcon{
+    display: none;
+}
+
+ul {
+    list-style: flex;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 0.99;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    width: 150px;
+    color: var(--clr-beige);
+    text-align: center;
+    font-size: 1.2em;
+}
+ul li ul.drop-down li{
+    display:static;
+    padding-top: 10px;
+}
+ul li ul.drop-down {
+    width: 100%;
+    top:100%;
+    position:flex;
+    z-index: 999;
+    display: none;
+    background-image: url('../assets/images/italy flag_-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:fit-content;
+    border: 2px solid var(--clr-bronze); 
+    padding-bottom: 10px;
+
+    border-radius: 20px; 
+    text-align: center;
+}
+
+ul li a:hover {
+    font-weight: bolder;
+    color: var(--clr-Basic);
+    position:sticky;
+}
+ul li:hover ul.drop-down {
+    display: block;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--clr-Basic);
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+}
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+    
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.grid #logo{
+    text-align: left;
+ }
+
+ header {
+    padding: 10px; /* Reduce padding for header */
+}
+
+.navHeader {
+    height: auto; /* Adjust height of navigation bar */
+}
+
+.navHeader ul.grid {
+    flex-direction: column; /* Change navigation links to column layout */
+    align-items: center; /* Center align navigation links */
+    padding-top: 10px; /* Add padding to top of navigation links */
+}
+
+.navHeader ul.grid li {
+    margin-bottom: 10px; /* Add margin between navigation links */
+}
+
+.navHeader ul.grid li a {
+    width: auto; /* Remove fixed width for navigation links */
+}
+
+
+
+h1 {
+    font-size: 2em !important;
+    font-style: italic;
+    margin-left: 20px !important;
+    margin-top: 20vb !important;
+}
+
+h2 {
+    font-size: var(--header-f-size) !important;
+    padding-top: 20px !important;
+    margin-bottom: 15px !important;
+}
+
+p {
+    font-weight: normal;
+    font-size: var(--p-f-size)!important;
+}
+
+#image1 img{
+    width: 50%;
+    height: 600px;
+    border: 5px  double var(--clr-green);
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#Founders{
+    position:relative;
+    background-color: var(--clr-black);
+    width: 43%;
+    height: fit-content;
+    margin-left: 52%;
+    padding: 20px;
+    margin-top: -520px;
+    z-index: -1;
+}
+#Founders p::first-letter{
+    font-size: 2em;
+    float: left;
+    font-weight: bold;
+    
+    color: var(--clr-green);
+}
+.image-container{
+    display: flex;
+    height: 65%;
+}
+.image-container img{
+    border-radius: 120px;
+    padding-left: 10px;
+    width: 33.33%;
+   height: auto;
+}
+
+
+
+#image2 img{
+    width: 42%;
+    height: 100vh;
+    border: 5px  double var(--clr-Basic);
+    border-radius: 30px;
+    margin-right: 15px;
+    margin-left: 55%;
+    margin-top: 150px;
+    
+}
+
+#Our-Specialties{
+    width: 45%;
+    height: fit-content;
+    padding: 20px;
+
+    margin : 70px;
+    margin-top: -560px;
+    z-index: -1;
+}
+#Our-Specialties p::first-letter{
+    font-size: 2em;
+    float: left;
+    font-weight: bolder;
+    color: var(--clr-Basic);
+
+}
+ #Our-Specialties p{
+    margin-top: 20px;
+} 
+#Our-Specialties img{
+    
+    width:70%;
+    height: 50vh;
+    margin-top: 20px;
+     margin: 0px 15%;
+}
+
+#image3 img{
+    width: 40%;
+    height: auto;
+    border: 5px  double var(--clr-hover-list);
+
+
+    border-radius: 30px;
+    margin-top:80px;
+    margin-left: 8%;
+    margin-bottom: 400px;
+    
+    
+}
+
+#Experience{
+
+    padding: 20px;
+    width: 40%;
+    height: fit-content;
+    margin-left : 55%;
+    margin-top: -850px;
+    z-index: -1;
+}
+
+#Experience img{
+    
+    width:70%;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 15%; 
+}
+
+#Experience p::first-letter{
+    font-size: 2em;
+    float: left;
+    font-weight: bolder;
+    color: var(--clr-hover-list);
+}
+
+footer {
+    width: 100%;
+    position: absolute !important;
+    bottom: 0 !important;
+    background: #f1b04e;
+    background: -webkit-radial-gradient(circle, #f1b04e 0%, #693103 100%);
+    background: radial-gradient(circle, #f1b04e 0%, #693103 100%);
+    color: var(--clr-black);
+    padding: 100px 0 30px;
+    text-align:center;
+
+}
+
+
+
+
+.grid-col{
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
